@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Web Forms</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <h1>Pet Adoption Application</h1>
@@ -23,6 +24,51 @@
 
     <label>How many pets are in your home?
       <input type="number" name="petCount">
+    </label>
+
+    <label>Why do you want to adopt a new pet?
+      <textarea name="applicantReason" rows="4" cols="50"></textarea>
+    </label>
+
+    <fieldset>
+
+    <legend>What types of animals are you interested in?</legend>
+
+    <label>Dogs
+      <input type="checkbox" name="type" value="dogs">
+    </label>
+    <label>Iguanas
+      <input type="checkbox" name="type" value="iguanas">
+    </label>
+    <label>Cats
+      <input type="checkbox" name="type" value="cats">
+    </label>
+    <label>Monkeys
+      <input type="checkbox" name="type" value="monkeys">
+    </label>
+    <label>Snakes
+      <input type="checkbox" name="type" value="snakes">
+    </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Are you interested in adopting spcial needs or elderly pets?</legend>
+
+      <label>Yes
+        <input type="radio" name="special" value="yes">
+      </label>
+      <label>No
+        <input type="radio" name="special" value="no">
+      </label>
+    </fieldset>
+
+    <label>How many hours a day is someone usually home to keep a pet company?
+      <select name="hours">
+        <option value="">Please select</option>
+        <option value="few">less than 10</option>
+        <option value="some">10 to 16</option>
+        <option value="many">more than 16</option>
+      </select>
     </label>
 
     <label>To create account, enter a password
