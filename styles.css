@@ -1,6 +1,6 @@
 button, input, select, textarea {
   font-family: inherit;
-  font-size: 100%;
+  font-size: 200%;
   box-sizing: border-box;
   display: block;
 }
@@ -10,11 +10,18 @@ input[type=submit] {
   background-color: SteelBlue;
 }
 
-input[type=password]:focus {
-  background-color: seagreen;
-  outline: none;
+input {
+  border-radius: 30px;
 }
 
-input {
-  border-radius: 15px;
+fieldset {
+  border:none;
+}
+
+fieldset input {
+  display:inline;
+}
+
+.checkmark input {
+  cursor: pointer;
 }
