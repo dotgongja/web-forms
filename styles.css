@@ -6,7 +6,7 @@ button, input, select, textarea {
 }
 
 input[type=submit] {
-  width: 100%;
+  width: 40%;
   background-color: SteelBlue;
 }
 
