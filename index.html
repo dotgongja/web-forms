@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Web Forms</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <h1>Pet Adoption Application</h1>
+  <h1>Here's how you can contact me!</h1>
 
   <form method="GET">
     <label>Your Name:
@@ -17,65 +17,58 @@
       <input type="email" name="applicantEmail">
     </label>
 
-    <!-- the other label syntax -->
+    <label>Your contact number:
+      <input type="tel" name="applicantTel">
+    </label>
 
-    <label for="city">What city are you in?</label>
+    <label for="city">What city are you currently in?
     <input id="city" type="text" name="applicantCity">
-
-    <label>How many pets are in your home?
-      <input type="number" name="petCount">
     </label>
 
-    <label>Why do you want to adopt a new pet?
-      <textarea name="applicantReason" rows="4" cols="50"></textarea>
-    </label>
+    <label>How old are you?
+       <input type="number" name="age">
+     </label>
 
-    <fieldset>
 
-    <legend>What types of animals are you interested in?</legend>
+    <fieldset class="checkmark">
 
-    <label>Dogs
-      <input type="checkbox" name="type" value="dogs">
+    <legend>Why do you want to get in contact with me?</legend>
+
+    <label>I want to become your friend
+      <input type="checkbox" name="type" value="friend">
+      <span class="checkmark"></span>
     </label>
-    <label>Iguanas
-      <input type="checkbox" name="type" value="iguanas">
+    <label>I would like to do business with you
+      <input type="checkbox" name="type" value="business">
+      <span class="checkmark"></span>
     </label>
-    <label>Cats
-      <input type="checkbox" name="type" value="cats">
+    <label>Donate $100M to you
+      <input type="checkbox" name="type" value="money">
+      <span class="checkmark"></span>
     </label>
-    <label>Monkeys
-      <input type="checkbox" name="type" value="monkeys">
+    <label>Go on a vacation with you
+      <input type="checkbox" name="type" value="vacation">
+      <span class="checkmark"></span>
     </label>
-    <label>Snakes
-      <input type="checkbox" name="type" value="snakes">
+    <label>Looking for a partner to play tennis with
+      <input type="checkbox" name="type" value="tennis">
+      <span class="checkmark"></span>
     </label>
     </fieldset>
 
-    <fieldset>
-      <legend>Are you interested in adopting spcial needs or elderly pets?</legend>
 
-      <label>Yes
-        <input type="radio" name="special" value="yes">
+    <fieldset>
+      <legend>How can I contact you?</legend>
+
+      <label>E-mail me
+        <input type="radio" name="special" value="email">
       </label>
-      <label>No
-        <input type="radio" name="special" value="no">
+      <label>Call Me
+        <input type="radio" name="special" value="phone">
       </label>
     </fieldset>
 
-    <label>How many hours a day is someone usually home to keep a pet company?
-      <select name="hours">
-        <option value="">Please select</option>
-        <option value="few">less than 10</option>
-        <option value="some">10 to 16</option>
-        <option value="many">more than 16</option>
-      </select>
-    </label>
-
-    <label>To create account, enter a password
-      <input type="password" name="accountPW">
-    </label>
-
-    <input type="submit" value="Apply Now!">
+    <input type="submit" value="Submit">
 
   </form>
 </body>
